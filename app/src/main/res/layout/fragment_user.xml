@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@color/bg_user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_imgUser"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:cardCornerRadius="@dimen/_100sdp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_20sdp">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgUser"
+                android:layout_width="100dp"
+                android:scaleType="fitXY"
+                android:layout_height="100dp"
+                android:src="@drawable/img_user" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvNameUser"
+            style="@style/text_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/cv_imgUser"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/cv_imgUser"
+            android:text="Nha tro abc"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/llSdt"
+            android:layout_below="@+id/tvNameUser"
+            android:layout_alignStart="@+id/tvNameUser"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="5dp">
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/ic_phone"
+                android:backgroundTint="@color/white"
+                android:layout_marginRight="5dp"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSdtUser"
+                style="@style/text_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0999999999"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llSdt"
+            android:layout_alignStart="@+id/llSdt">
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/ic_location"
+                android:backgroundTint="@color/white"
+                android:layout_marginRight="5dp"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvAddressUser"
+                style="@style/text_user"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="5dp"
+                android:text="Ba Dinh, Ha Noi"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_myroom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="@color/white"
+        android:gravity="left|center_vertical"
+        android:paddingStart="@dimen/_18sdp"
+        android:text="Phòng của bạn"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnFavourite3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@color/white"
+        android:gravity="left|center_vertical"
+        android:paddingStart="@dimen/_18sdp"
+        android:text="@string/favourite"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_myroom"
+        tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSettingAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@color/white"
+        android:gravity="left|center_vertical"
+        android:paddingStart="@dimen/_18sdp"
+        android:text="@string/settingAccount"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@+id/btnFavourite3"
+        tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnChangePass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@color/white"
+        android:gravity="left|center_vertical"
+        android:paddingStart="@dimen/_18sdp"
+        android:text="@string/changePass"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btnSettingAccount"
+        app:layout_constraintTop_toBottomOf="@+id/btnSettingAccount"
+        tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnPayHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@color/white"
+        android:gravity="left|center_vertical"
+        android:paddingStart="@dimen/_18sdp"
+        android:text="Lịch sử thanh toán"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@+id/btnChangePass"
+        tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@color/white"
+        android:gravity="left|center_vertical"
+        android:paddingStart="@dimen/_18sdp"
+        android:text="@string/logout"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btnChangePass"
+        app:layout_constraintStart_toStartOf="@+id/btnPayHistory"
+        app:layout_constraintTop_toBottomOf="@+id/btnPayHistory"
+        tools:ignore="RtlHardcoded,RtlSymmetry" />
+</androidx.constraintlayout.widget.ConstraintLayout>

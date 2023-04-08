@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/dialog_bg"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tvNameRoom"
+            android:layout_width="220dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:text="Báo cáo phòng trọ"
+            android:textSize="16dp"
+            android:textColor="@color/cardview_dark_background" />
+
+        <EditText
+
+            android:id="@+id/edtBaoCao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập báo cáo sai phạm"
+            android:textSize="15dp"
+            />
+
+
+        <Button
+            android:id="@+id/btnThanhToan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gửi cho findHome"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>

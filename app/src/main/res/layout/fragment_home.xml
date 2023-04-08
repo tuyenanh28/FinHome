@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+      <androidx.viewpager.widget.ViewPager
+          android:layout_width="match_parent"
+          android:layout_height="190dp"
+          android:id="@+id/viewPage"/>
+      <me.relex.circleindicator.CircleIndicator
+          android:id="@+id/cir"
+          android:layout_width="wrap_content"
+          android:layout_height="40dp"
+          app:ci_drawable="@drawable/bg_indicator"
+          android:layout_gravity="center"
+          tools:ignore="MissingClass" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:text="FindHome New Room"
+          android:textColor="@color/black"
+          android:textSize="20dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginBottom="20dp"
+          android:textStyle="italic"/>
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/rcvRoomNew"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/imgBanner"
+          app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+          android:nestedScrollingEnabled="false"
+          tools:listitem="@layout/item_room" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:text="Tất cả phòng đăng"
+          android:textColor="@color/black"
+          android:textSize="20dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginBottom="20dp"
+          android:textStyle="italic"/>
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/rcvRoomMain"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/imgBanner"
+          app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+          android:nestedScrollingEnabled="false"
+          tools:listitem="@layout/item_room" />
+  </LinearLayout>
+
+
+
+</androidx.core.widget.NestedScrollView>

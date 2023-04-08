@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/containerRoom"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgRoom"
+            android:layout_width="100dp"
+            android:scaleType="fitXY"
+            android:layout_height="match_parent"
+            android:src="@drawable/bg_room"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/tvNameRoom"
+                    android:layout_width="220dp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Phòng trọ sinh viên, có gác xép"
+                    android:textSize="16dp"
+                    android:textColor="@color/cardview_dark_background" />
+
+                <TextView
+                    android:layout_marginStart="10dp"
+                    android:id="@+id/tvPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1.000.000đ"
+                    android:textColor="#009B10"
+                    android:textSize="15dp"
+                    />
+
+                <TextView
+                    android:layout_marginStart="10dp"
+                    android:id="@+id/tvAddressRoom"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Cầu Giấy, Hà Nội"
+                    android:textSize="10dp" />
+
+
+        </LinearLayout>
+
+
+</LinearLayout>
+
+

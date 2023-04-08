@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="170dp"
+    android:orientation="vertical"
+    android:padding="1dp"
+    android:layout_margin="5dp"
+    android:id="@+id/linearHome"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="120dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/frame"
+        android:id="@+id/imgHome"/>
+    <TextView
+        android:id="@+id/tvNgayDang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/grey"
+        android:layout_marginTop="8dp"
+        android:text="Ngay Dang"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:id="@+id/tvName"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="Name"/>
+    <TextView
+        android:id="@+id/tvGia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/com_facebook_blue"
+        android:text="Gia"/>
+    <TextView
+        android:id="@+id/tvDiaChi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"
+        android:textColor="@color/grey"
+        android:fontFamily="@font/roboto"
+        android:text="Dia chi"/>
+
+</LinearLayout>

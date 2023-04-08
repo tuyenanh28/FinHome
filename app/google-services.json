@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "966623057753",
+    "firebase_url": "https://my-finhome-default-rtdb.firebaseio.com",
+    "project_id": "my-finhome",
+    "storage_bucket": "my-finhome.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966623057753:android:0d5f8269362d18dca69e48",
+        "android_client_info": {
+          "package_name": "com.datn.finhome"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "966623057753-190gejss664gd3sch36ab8shra4aci5h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.datn.finhome",
+            "certificate_hash": "ed133f1366ca06be7b377f975820c44f92d46b87"
+          }
+        },
+        {
+          "client_id": "966623057753-j1g05sa0ugdgcfdjqrjerfred5sdngqd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7taevgiJQqggKTYMsx7odK2WU0ubPyfE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "966623057753-j1g05sa0ugdgcfdjqrjerfred5sdngqd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

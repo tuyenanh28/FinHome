@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">FinHome</string>
+    <string name="facebook_app_id">495403812621846</string>
+    <string name="fb_login_protocol_scheme">fb495403812621846</string>
+    <string name="facebook_client_token">31b3687d3d05b458ae7349d4e2ba7242</string>
+
+    <string name="userName">Tên Đăng Nhập</string>
+    <string name="passWord">Mật Khẩu</string>
+    <string name="login">Đăng Nhập</string>
+    <string name="loginWith">Hoặc Đăng Nhập Với</string>
+    <string name="loginWithFB">Đăng Nhập Với Facebook</string>
+    <string name="loginWithZL">Đăng Nhập Với Zalo</string>
+    <string name="register">Đăng Ký</string>
+    <string name="hintSdt">SĐT/Email</string>
+    <string name="Name">Tên của bạn</string>
+    <string name="alertUser">Bạn muốn cho thuê phòng ?</string>
+    <string name="favourite">Yêu thích</string>
+    <string name="addRoom">Đăng bài</string>
+    <string name="history">Lịch sử</string>
+    <string name="settingAccount">Cài đặt tài khoản</string>
+    <string name="changePass">Đổi mật khẩu</string>
+    <string name="logout">Đăng xuất</string>
+    <string name="addPhong">Thêm phòng trọ</string>
+    <string name="roomRent">Phòng trọ cho thuê</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="addressHost">Vị trí trên bản đồ</string>
+    <string name="c_th_thu">Có thể thuê</string>
+    <string name="save">Lưu</string>
+</resources>

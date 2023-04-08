@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views.Activity.AccountInfoActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toobar_acc"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/bg_user_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toobar_acc">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_165sdp"
+                android:background="@color/bg_user">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    app:cardCornerRadius="@dimen/_100sdp"
+                    android:layout_centerInParent="true">
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imgAccInfo"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_user" />
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/txt_name_acc"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginHorizontal="@dimen/_24sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:background="@drawable/edit_text_border"
+                android:ems="10"
+                android:hint="Họ tên"
+                android:inputType="textPersonName"
+                android:paddingLeft="@dimen/_18sdp"
+                android:textColorHint="@color/grey" />
+
+            <EditText
+                android:id="@+id/txt_sdt_acc"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginHorizontal="@dimen/_24sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:background="@drawable/edit_text_border"
+                android:ems="10"
+                android:hint="Số điện thoại"
+                android:inputType="phone"
+                android:paddingLeft="@dimen/_18sdp"
+                android:textColorHint="@color/grey" />
+
+            <EditText
+                android:id="@+id/txt_mail_acc"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginHorizontal="@dimen/_24sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:background="@drawable/edit_text_border"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="@dimen/_18sdp"
+                android:textColorHint="@color/grey" />
+
+            <EditText
+                android:id="@+id/txt_address_acc"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginHorizontal="@dimen/_24sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:background="@drawable/edit_text_border"
+                android:drawableEnd="@drawable/ic_location"
+                android:ems="10"
+                android:hint="Địa chỉ"
+                android:inputType="text"
+                android:paddingLeft="@dimen/_18sdp"
+                android:paddingRight="@dimen/_20sdp"
+                android:textColorHint="@color/grey" />
+
+            <Button
+                android:id="@+id/btn_del_acc"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_52sdp"
+                android:layout_marginHorizontal="@dimen/_24sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:background="@drawable/bg_btn_delete"
+                android:backgroundTint="@color/white"
+                android:text="Xóa tài khoản"
+                android:textColor="@color/red"
+                android:textSize="13dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

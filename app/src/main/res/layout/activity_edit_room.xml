@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameTop">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edit_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginHorizontal="@dimen/_24sdp"
+                android:layout_marginTop="@dimen/_52sdp"
+                android:background="@drawable/edit_text_border"
+                android:ems="10"
+                android:hint="Tiêu đề"
+                android:inputType="textPersonName"
+                android:paddingLeft="@dimen/_18sdp"
+                android:textColorHint="@color/grey" />
+
+            <EditText
+                android:id="@+id/edit_location"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginHorizontal="@dimen/_24sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:background="@drawable/edit_text_border"
+                android:drawableRight="@drawable/ic_location"
+                android:ems="10"
+                android:hint="Địa chỉ"
+                android:inputType="textPersonName"
+                android:paddingLeft="@dimen/_18sdp"
+                android:paddingRight="@dimen/_20sdp"
+                android:textColorHint="@color/grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="@dimen/_24sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                >
+
+                <EditText
+                    android:id="@+id/edit_size_room"
+                    android:layout_width="164dp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/edit_text_border"
+                    android:ems="10"
+                    android:hint="Kích thước m2"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/_18sdp"
+                    android:textColorHint="@color/grey" />
+
+                <EditText
+                    android:id="@+id/edit_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_50sdp"
+                    android:background="@drawable/edit_text_border"
+                    android:ems="10"
+                    android:hint="Giá tiền"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/_18sdp"
+                    android:textColorHint="@color/grey" />
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/edit_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_24sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:background="@drawable/edit_text_border"
+                android:gravity="start"
+                android:hint="Mô tả"
+                android:inputType="textCapSentences|textMultiLine"
+                android:lines="5"
+                android:maxLines="5"
+                android:paddingHorizontal="@dimen/_18sdp"
+                android:paddingTop="@dimen/_18sdp"
+                android:textColorHint="@color/grey"
+                tools:ignore="RtlSymmetry" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thêm ảnh phòng"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="@dimen/_24sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:textSize="@dimen/_15sdp"/>
+
+            <ImageView
+                android:id="@+id/dgAdd_add"
+                android:layout_width="350dp"
+                android:layout_height="150dp"
+                android:layout_marginHorizontal="@dimen/_24sdp"
+                android:src="@drawable/ic_add"
+                android:background="#EDEDED"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_24sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:scrollbarStyle="outsideInset"
+                android:scrollbars="vertical" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnPost2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_52sdp"
+                android:layout_marginHorizontal="@dimen/_24sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:backgroundTint="#008080"
+                android:text="Update Room"
+                android:textColor="@color/white"
+                android:textSize="13dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
